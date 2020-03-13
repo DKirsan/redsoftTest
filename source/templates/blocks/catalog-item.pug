@@ -1,0 +1,19 @@
+include ../blocks/button
+
+mixin catalog-item(img, name, price, oldPrice)
+    .catalog-item&attributes(attributes)
+        .catalog-item__container
+            .catalog-item__picture(style='background-image:url('+img+')')
+            .catalog-item__content
+                .catalog-item__name !{name}
+                .catalog-item__info
+                    if price
+                        .catalog-item__price
+                            .catalog-item__old-price
+                                | !{oldPrice}
+                            .catalog-item__cur-price
+                                | !{price}
+                        +button('Купить')
+                    else
+                        .catalog-item__price
+                            | Продана на аукционе

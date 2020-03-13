@@ -1,0 +1,7 @@
+include ../blocks/button
+include ../blocks/input
+
+mixin search-form(placeholder, button)
+    .search-form
+        +input(text)(placeholder=placeholder)
+        +button(button)

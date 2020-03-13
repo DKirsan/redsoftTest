@@ -1,0 +1,9 @@
+include ../blocks/catalog-item
+
+section.catalog
+    h1 Картины эпохи Возрождения
+    .catalog__container
+        +catalog-item('images/img1.jpg', '«Рождение Венеры» Сандро Боттичелли', '1 000 000 $', '2 000 000 $')
+        +catalog-item('images/img2.jpg', '«Тайная вечеря» Леонардо да Винчи', '3 000 000 $')
+        +catalog-item('images/img3.jpg', '«Сотворение Адама» Микеланджело', '5 000 000 $', '6 000 000 $')
+        +catalog-item('images/img4.jpg', '«Урок анатомии» Рембрандт')(data-disabled)

@@ -1,0 +1,29 @@
+.menu {
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    font-size: 14px;
+    line-height: 48px;
+    margin-right: 48px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__logo {
+    width: auto;
+    height: 48px;
+    display: block;
+  }
+}

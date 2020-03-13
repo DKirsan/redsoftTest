@@ -1,0 +1,6 @@
+mixin button(name)
+    button.button(data-name=name)&attributes(attributes)
+        if block
+            block
+        else
+            span !{name}

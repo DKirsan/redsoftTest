@@ -1,0 +1,39 @@
+.footer {
+  flex-shrink: 0;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background: $c-bg-2;
+  color: $c-text-2;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .menu {
+    flex: 1 0 0;
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    line-height: 48px;
+  }
+
+  &__info-item {
+    margin-left: 40px;
+
+    svg {
+      fill: $c-text-2;
+      width: 14px;
+      height: 14px;
+      margin-right: 8px;
+    }
+  }
+
+  &__info-link {
+    text-decoration: none;
+    color: inherit;
+  }
+}

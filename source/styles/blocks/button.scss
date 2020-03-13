@@ -1,0 +1,56 @@
+.button {
+  display: inline-block;
+  border: 0;
+  border-radius: 0;
+  min-width: 118px;
+  height: 48px;
+  padding: 0 29px;
+  margin: 0;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-decoration: none;
+  text-align: center;
+  background: $c-brand-1;
+  color: $c-text-5;
+  appearance: none;
+  cursor: pointer;
+
+  &[data-added] {
+    padding-left: 8px;
+    padding-right: 8px;
+    background: $c-brand-2;
+
+    span {
+      margin-left: 7px;
+    }
+  }
+
+  &__spinner {
+    width: 18px;
+    height: 18px;
+    fill: $c-text-5;
+    animation: rotating 2s linear infinite;
+  }
+
+  &__icon {
+    width: 16px;
+    height: 13px;
+    stroke: $c-text-5;
+  }
+
+  &:hover {
+    background: $c-brand-3;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px $c-brand-4;
+  }
+
+  &[disabled] {
+    background: $c-brand-4;
+    cursor: not-allowed;
+  }
+}

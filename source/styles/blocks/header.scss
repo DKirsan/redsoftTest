@@ -1,0 +1,12 @@
+.header {
+  flex-shrink: 0;
+  padding-top: 24px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $c-border-2;
+  color: $c-text-1;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
